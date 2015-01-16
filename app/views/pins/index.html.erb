@@ -1,4 +1,6 @@
-<h1><%= link_to "New Pin", new_pin_path %></h1>
+<h1><%= link_to "Create New Pin", new_pin_path %></h1>
 <% @pins.each do |pin| %>
-  <%= link_to pin.title, pin %>
+  <div class="container">
+    <%= link_to pin.title, pin %>
+  </div>
 <% end %>
